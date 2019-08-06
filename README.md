@@ -68,21 +68,21 @@ Eg. `/?define=prarabdh&lang=hi`, will give you definition of **Prarabdh** as pre
 ```
 
 
-List of languages supported can be found [here](https://oxforddictionaryapi.herokuapp.com/languageCode.txt) for your reference.
+List of languages supported can be found [here](https://safe-gorge-56838.herokuapp.com//languageCode.txt) for your reference.
 
 ### Paths
 
 | Location | Endpoint |
 | :-- | :-- |
-| Root path | `https://oxforddictionaryapi.herokuapp.com`|
+| Root path | `https://safe-gorge-56838.herokuapp.com/`|
 
 
 ### HTTP request and query methods
 
 | Method | Endpoint | Query | Description | Examples |
 | :-- | :-- | :-- | :-- | :-- |
-| `GET` | `/` | `?define=<YOUR_WORD>` | Retrieves the Oxford Dictionary definition of the given word that has been entered instead of `<YOUR_WORD>`. | [`?define=hello`](https://oxforddictionaryapi.herokuapp.com/?define=hello) |
-| `GET` | `/` | `/?define=<YOUR_WORD>&lang=<LANGUAGE>` | Retrieves the Google Dictionary definition (as Oxford provides support only of English language) of the given word that has been entered instead of `<YOUR_WORD>` in the [provided language](https://oxforddictionaryapi.herokuapp.com/languageCode.txt) `<LANGUAGE>`. | [`/?define=prarabdh&lang=hi`](https://oxforddictionaryapi.herokuapp.com/?define=prarabdh&lang=hi) |
+| `GET` | `/` | `?define=<YOUR_WORD>` | Retrieves the Oxford Dictionary definition of the given word that has been entered instead of `<YOUR_WORD>`. | [`?define=hello`](https://safe-gorge-56838.herokuapp.com//?define=hello) |
+| `GET` | `/` | `/?define=<YOUR_WORD>&lang=<LANGUAGE>` | Retrieves the Google Dictionary definition (as Oxford provides support only of English language) of the given word that has been entered instead of `<YOUR_WORD>` in the [provided language](https://safe-gorge-56838.herokuapp.com//languageCode.txt) `<LANGUAGE>`. | [`/?define=prarabdh&lang=hi`](https://safe-gorge-56838.herokuapp.com//?define=prarabdh&lang=hi) |
 
 ## Future plans  
 
