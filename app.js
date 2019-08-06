@@ -13,7 +13,7 @@ var indexRoute = require("./routes");
 app.get("/", indexRoute);
 
 
-app.listen(3000, function() {
+app.listen(process.env.PORT || 3000, function() {
     console.log("I am listening...");
 });
 
