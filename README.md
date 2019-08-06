@@ -42,41 +42,47 @@ Eg. `/?define=hello`, will give you the Oxford dictionary definition of **hello*
 
 
 Optionally you can also send another parameter `lang` equal to code of the language in which the word appear.
+*For language other than English, this API scrapes from Google (as oxford doesn't provide dictionary of languages other than English)*
 
-Eg. `/?define=Bonjour&lang=fr`, will give you definition of **Bonjour** as present in French Dictionary.
+Eg. `/?define=prarabdh&lang=hi`, will give you definition of **Prarabdh** as present in French Dictionary.
 
 ```json
 {
-  "word": "bonjour",
+  "word": "प्रारब्ध",
   "meaning": {
-    "nom_masculin": [
-      {
-        "definition": "Souhait de bonne journée (adressé en arrivant, en rencontrant).",
-        "synonyms": [
-          "salut"
-        ]
-      }
-    ]
+      "विशेषण": [
+          {
+              "definition": "आरंभ किया हुआ।"
+          }
+      ],
+      "पुल्लिंग": [
+          {
+              "definition": "भाग्य, तकदीर।"
+          },
+          {
+              "definition": "पूर्व जन्म के कार्य।"
+          }
+      ]
   }
 }
 ```
 
 
-List of languages supported can be found [here](https://googledictionaryapi.eu-gb.mybluemix.net/languageCode.txt) for your reference.
+List of languages supported can be found [here](https://oxforddictionaryapi.herokuapp.com/languageCode.txt) for your reference.
 
 ### Paths
 
 | Location | Endpoint |
 | :-- | :-- |
-| Root path | `https://googledictionaryapi.eu-gb.mybluemix.net`|
-| Root path | `https://mydictionaryapi.appspot.com/`|
+| Root path | `https://oxforddictionaryapi.herokuapp.com`|
+
 
 ### HTTP request and query methods
 
 | Method | Endpoint | Query | Description | Examples |
 | :-- | :-- | :-- | :-- | :-- |
-| `GET` | `/` | `?define=<YOUR_WORD>` | Retrieves the Google Dictionary definition of the given word that has been entered instead of `<YOUR_WORD>`. | [`?define=hello`](https://googledictionaryapi.eu-gb.mybluemix.net/?define=hello) |
-| `GET` | `/` | `/?define=<YOUR_WORD>&lang=<LANGUAGE>` | Retrieves the Google Dictionary definition of the given word that has been entered instead of `<YOUR_WORD>` in the [provided language](https://googledictionaryapi.eu-gb.mybluemix.net/languageCode.txt) `<LANGUAGE>`. | [`/?define=Bonjour&lang=fr`](https://googledictionaryapi.eu-gb.mybluemix.net/?define=Bonjour&lang=fr) |
+| `GET` | `/` | `?define=<YOUR_WORD>` | Retrieves the Oxford Dictionary definition of the given word that has been entered instead of `<YOUR_WORD>`. | [`?define=hello`](https://oxforddictionaryapi.herokuapp.com/?define=hello) |
+| `GET` | `/` | `/?define=<YOUR_WORD>&lang=<LANGUAGE>` | Retrieves the Google Dictionary definition (as Oxford provides support only of English language) of the given word that has been entered instead of `<YOUR_WORD>` in the [provided language](https://oxforddictionaryapi.herokuapp.com/languageCode.txt) `<LANGUAGE>`. | [`/?define=prarabdh&lang=hi`](https://oxforddictionaryapi.herokuapp.com/?define=prarabdh&lang=hi) |
 
 ## Future plans  
 
@@ -85,15 +91,4 @@ Pull requests are welcome!
 
 ## Support  
 
-If you need any assistance or find any bugs, feel free to contact me directly via [email](mailto:himansh.jain1997@gmail.com) or [create a new issue](https://github.com/meetDeveloper/googleDictionaryAPI/issues) on the GitHub page.
-
-## Related Projects
-
-### [Dictionary Anywhere](https://github.com/meetDeveloper/Dictionary-Anywhere)
-
-The **Dictionary Anywhere** extension helps you stay focused on what you are reading by eliminating the need to search for meaning, 
-Double-clicking any word will view its definition in a small pop-up bubble. 
-Now you never have to leave what you are reading to search for the meaning of the words you don't yet know.
-
-Extension is available for [Google Chrome](https://chrome.google.com/webstore/detail/dictionary-anywhere/hcepmnlphdfefjddkgkblcjkbpbpemac/) and [Mozilla Firefox](https://addons.mozilla.org/en-US/firefox/addon/dictionary-anyvhere).
-##### Enjoy Reading Uninterrupted!!!
+If you need any assistance or find any bugs, feel free to contact me directly via [email](mailto:himansh.jain1997@gmail.com) or [create a new issue](https://github.com/bugsnotfound/oxfordDictionaryAPI/issues) on the GitHub page.
