@@ -1,0 +1,20 @@
+{
+    "name": "oxforddictionaryapi",
+    "version": "1.0.0",
+    "description": "This is an unofficial API for Oxford dictionary.",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node app.js"
+    },
+    "author": "Suraj Jain",
+    "license": "ISC",
+    "dependencies": {
+        "cheerio": "^1.0.0-rc.2",
+        "dotenv": "^8.0.0",
+        "express": "^4.16.2",
+        "mongoose": "^5.6.7",
+        "random-useragent": "^0.3.1",
+        "request": "^2.88.0"
+    }
+}
